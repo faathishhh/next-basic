@@ -1,16 +1,14 @@
 import React from 'react'
 
 interface PageParams {
-  params: Promise<{ prodId: String }>
+  params: Promise<{ prodId: string }>
 }
 interface ProductShape {
-
-  id: Number;
-  title: String;
+  id: number;
+  title: string;
   thumbnail: string;
-  category: String;
-  price: Number
-
+  category: string;
+  price: number;
 }
 
 const fetchProduct = async (id: string) => {
